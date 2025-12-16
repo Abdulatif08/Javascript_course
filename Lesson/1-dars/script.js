@@ -1,3 +1,3 @@
- const app ="Hello, world!";
+//  const app ="Hello, world!";
 
- console.log(app)
+//  console.log(app)
