@@ -1,9 +1,14 @@
-let students = [
-  { name: "Ali", age: 18, score: 72 },
-  { name: "Vali", age: 20, score: 85 },
-  { name: "Hasan", age: 17, score: 60 },
-  { name: "Husan", age: 22, score: 90 },
-  { name: "Olim", age: 19, score: -10 }
+let talablar = [
+  { nomi: "forEach", vazifasi: "Har bir elementni ko‘rish" },
+  { nomi: "map", vazifasi: "Elementni o‘zgartirish" },
+  { nomi: "filter", vazifasi: "Keraklisini ajratish" },
+  { nomi: "find", vazifasi: "Bitta elementni topish" },
+  { nomi: "some", vazifasi: "Kamida bittasi bormi?" },
+  { nomi: "every", vazifasi: "Hammasi to‘g‘rimi?" },
+  { nomi: "reduce", vazifasi: "Hisoblash (yig‘indi)" },
+  { nomi: "sort", vazifasi: "Tartiblash" },
+  { nomi: "reverse", vazifasi: "Teskari qilish" }
 ];
-
-document.getElementById("ro'yhat").innerHTML = JSON.stringify(students, null, 2);
+talablar.forEach(function(talablar, index){
+    console.log(`${index + 1}. ${talablar.nomi} - ${talablar.vazifasi}`);
+})
